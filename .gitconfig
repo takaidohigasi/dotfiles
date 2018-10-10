@@ -19,3 +19,6 @@
   compactionHeuristic = true
 [commit]
   template = ~/.commit_template
+[url "github:"]
+  InsteadOf = https://github.com/
+  InsteadOf = git@github.com:
