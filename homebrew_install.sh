@@ -35,6 +35,7 @@ done
 
 casks=(
     caffeine
+    coteditor
     firefox
     google-chrome
     google-japanese-ime
