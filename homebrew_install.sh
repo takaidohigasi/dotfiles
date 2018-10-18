@@ -14,7 +14,8 @@ echo "ok. run brew upgrade..."
 brew upgrade --all
 
 formulas=(
-    bash-completions
+    ansible
+    bash-completion
     cask
     curl
     docker
@@ -23,7 +24,7 @@ formulas=(
     markdown
     nmap
     openssl
-    ansible
+    peco
     sqlite
     wget
 )
