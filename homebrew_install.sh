@@ -3,6 +3,12 @@
 echo "installing homebrew..."
 which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+if ! grep -q '/opt/homebrew/bin/brew shellenv' $HOME/.zprofile
+then
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 echo "run brew doctor..."
 which brew >/dev/null 2>&1 && brew doctor
 
@@ -21,6 +27,8 @@ formulas=(
     docker
     docker-machine
     git
+    gnu
+    jq
     markdown
     nmap
     openssl
@@ -39,17 +47,19 @@ casks=(
     coteditor
     firefox
     google-chrome
+    google-cloud-sdk
     google-japanese-ime
     iterm2
     slack
     virtualbox
     vagrant
     vagrant-manager
+    1password/tap/1password-cli
 )
 
 echo "start brew cask install apps..."
 for cask in "${casks[@]}"; do
-    brew cask install $cask
+    brew install $cask --cask
 done
 
 brew cleanup
