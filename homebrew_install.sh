@@ -33,6 +33,7 @@ formulas=(
     nmap
     openssl
     peco
+    sourcegraph/src-cli/src-cli
     sqlite
     wget
 )
