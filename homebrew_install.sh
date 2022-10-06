@@ -28,6 +28,7 @@ formulas=(
     docker-machine
     git
     gnu
+    golang
     jq
     markdown
     nmap
@@ -35,6 +36,7 @@ formulas=(
     peco
     sourcegraph/src-cli/src-cli
     sqlite
+    terraform
     wget
 )
 
