@@ -20,6 +20,7 @@ echo "ok. run brew upgrade..."
 brew upgrade --all
 
 formulas=(
+    ag
     ansible
     bash-completion
     cask
