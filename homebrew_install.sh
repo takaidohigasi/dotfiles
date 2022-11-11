@@ -31,6 +31,7 @@ formulas=(
     gnu
     golang
     jq
+    kubectx
     markdown
     nmap
     openssl
