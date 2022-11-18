@@ -24,6 +24,7 @@ formulas=(
     ansible
     bash-completion
     cask
+    cue-lang/tap/cue
     curl
     docker
     docker-machine
