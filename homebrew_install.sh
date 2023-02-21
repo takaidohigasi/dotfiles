@@ -26,7 +26,6 @@ formulas=(
     cask
     cue-lang/tap/cue
     curl
-    docker
     docker-machine
     git
     gnu
@@ -51,6 +50,7 @@ done
 casks=(
     caffeine
     coteditor
+    docker
     firefox
     google-chrome
     google-cloud-sdk
