@@ -33,6 +33,7 @@ formulas=(
     jq
     kubectx
     markdown
+    mise
     nmap
     openssl
     peco
