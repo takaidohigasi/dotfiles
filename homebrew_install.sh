@@ -27,13 +27,17 @@ formulas=(
     cue-lang/tap/cue
     curl
     docker-machine
+    gdrive
     git
+    gh
     gnu
     golang
     jq
     kubectx
+    kubernetes-cli
     markdown
     mise
+    mysql-client
     nmap
     openssl
     peco
@@ -52,16 +56,17 @@ casks=(
     caffeine
     coteditor
     docker
-    firefox
+#    firefox
+    ghostty
     google-chrome
     google-cloud-sdk
     google-japanese-ime
     iterm2
-    slack
+#    slack
     virtualbox
     vagrant
     vagrant-manager
-    1password/tap/1password-cli
+    1password-cli
 )
 
 echo "start brew cask install apps..."
